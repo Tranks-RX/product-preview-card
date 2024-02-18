@@ -68,18 +68,18 @@
   font-family: 'Fraunces';
   font-weight: bolder;
   animation: bounce;
-  animation-duration: 4s;
-  animation-delay: 4s;
-  animation-iteration-count: 5;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-iteration-count: 2;
 }
 
 #desconto{
   text-decoration: line-through;
   font-size: 13px;
   animation: backOutRight;
-  animation-duration: 4s;
-  animation-delay: 4s;
-  animation-iteration-count: 5;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: 2;
 }
 
 .comprar{
