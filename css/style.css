@@ -1,0 +1,148 @@
+*{
+  font-family: 'Montserrat';
+  background-color: hsl(30, 38%, 92%);
+}
+
+.card *{
+  background-color:transparent;
+  justify-content: center;
+}
+
+.card{
+  display: flex;
+  width: 600px;
+  height: 450px;
+  justify-content: center;
+  background-color: white;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.imagem{
+  display: flex;
+  width: auto;
+  height: auto;
+  border-radius: 100%;
+}
+
+.texto-produto{
+  padding: 15px 35px;
+}
+
+.texto-produto h3{
+  border-top: 17px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  color: lightslategray;
+  letter-spacing: 4px;
+}
+
+.texto-produto h1{
+  font-family: 'Fraunces';
+  line-height: 1.0;
+}
+
+.texto-produto p{
+  font-size: 14px;
+  line-height: 1.7;
+  padding-top: 8px;
+  margin: 0;
+}
+
+.preco{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 8px;
+  padding-right: 30px;
+}
+
+#valor{
+  color: hsl(158, 36%, 37%);
+  font-size: 35px;
+  font-family: 'Fraunces';
+  font-weight: bolder;
+  animation: bounce;
+  animation-duration: 4s;
+  animation-delay: 4s;
+  animation-iteration-count: 5;
+}
+
+#desconto{
+  text-decoration: line-through;
+  font-size: 13px;
+  animation: backOutRight;
+  animation-duration: 4s;
+  animation-delay: 4s;
+  animation-iteration-count: 5;
+}
+
+.comprar{
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: hsl(158, 36%, 37%);
+  margin-top: 15px;
+  gap: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.comprar img{
+  width: 15px;
+  height: 15px;
+}
+
+.comprar span{
+  font-size: 13px;
+  font-weight: bolder;
+}
+
+.comprar:hover{
+  text-decoration: underline;
+  background-color: rgb(1, 80, 26) ;
+}
+
+.footer {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .footer a {
+    color:hsl(158, 36%, 37%);
+    text-decoration: none;
+  }
+
+  .footer a:hover{
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .card {
+      width: auto;
+      position: relative;
+      height: auto;
+    }
+  
+    .imagem {
+      width: 100%;
+      border-radius: 10px 10px 0 0;
+    }
+  
+    .texto-produto {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      padding: 20px;
+      border-radius: 0 0 10px 10px;
+      box-sizing: border-box; /* inclui padding e borda na largura total */
+    }
+  }
